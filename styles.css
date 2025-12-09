@@ -11,8 +11,8 @@
     --primary-light: #09f;
     --background: #101922;
     --text-primary: #fff;
-    --text-secondary: #cbd5e1;
-    --text-muted: #94a3b8;
+    --text-secondary: #94a3b8;
+    --text-muted: #70767f;
     --border: rgba(255, 255, 255, 0.1);
     --card-bg: #1e293b;
     --shadow: rgba(0, 0, 0, 0.3);
@@ -463,6 +463,59 @@ body {
         
     } */
     
+}
+
+.offer-details {
+    .content {
+        width: 75%;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    .path {
+        color: var(--text-muted);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: .5rem;
+        padding-top: 4rem;
+    }
+
+    .path a {
+        color: var(--text-muted);
+        text-decoration: none;
+        letter-spacing: .2px;
+
+        &.is-active {
+            color: var(--text-primary);
+        }
+    }
+
+    .offer-details__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 3.5rem 0;
+    }
+
+    .offer-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .offer-header__title {
+        color: var(--text-primary);
+        font-size: 2.5rem;
+        padding-bottom: .4rem;
+    }
+
+    .offer-header__subtitle {
+        color: var(--text-secondary);
+        letter-spacing: .4px;
+        
+
+    }
 }
 
 .footer {
