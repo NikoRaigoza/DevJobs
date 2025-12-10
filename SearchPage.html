@@ -6,6 +6,7 @@
     <title>Busqueda de ofertas de empleo</title>
     <meta name="description" content="Busca en miles de ofertas de empleo tu proxima oportunidad">
     <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -43,8 +44,13 @@
                     <button class="section__button btn-primary" type="submit">Buscar</button>
                 </form>
                 <div class="filters__list">
-                    <select class="filters__list-select"name="filters__list-tecno" id="tecno">
-                        <option value="">Tecnologia</option>
+                    <select class="filters__list-select" name="filters__list-tecno" id="tecno">
+                        <option>Tecnologia</option>
+                        <option value="js">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="sql">SQL</option>
+                        <option value="swift">Swift</option>
+                        <option value="aws">AWS</option>
                     </select>
                     <select class="filters__list-select" name="filters__list-ubi" id="ubi">
                         <option value="">Ubicacion</option>
@@ -60,14 +66,14 @@
             <section class="resultados__container">
                 <h2 class="resultados__title">Resultados de la busqueda</h2>
                 <div class="resultados__list">
-                    <article class="resultados__article">
+                    <article class="resultados__article" data-tecno="js">
                         <h3 class="resultados__article-title">Ingeniero de Software</h3>
                         <p class="resultados__article-subtitle">Tech Solution Inc. | Remoto</p>
                         <p class="resultados__article-description">Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript, React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación</p>
                         <button class="resultados__article-btn btn-primary">Aplicar</button>
                     </article>
     
-                    <article class="resultados__article">
+                    <article class="resultados__article" data-tecno="python sql">
                         <h3 class="resultados__article-title">Analista de datos</h3>
                         <p class="resultados__article-subtitle">Data Driven Co. | Medellín</p>
                         <p class="resultados__article-description">Estamos buscando un analista de datos con experiencia en el manejor de grandes conjuntos de datos y herramientas de visualizacion. Se requiere conocimiento en SQL, Python y R
@@ -75,14 +81,14 @@
                         <button class="resultados__article-btn btn-primary">Aplicar</button>
                     </article>
     
-                    <article class="resultados__article">
+                    <article class="resultados__article" data-tecno="swift">
                         <h3 class="resultados__article-title">Desarrollador de Aplicaciones Moviles</h3>
                         <p class="resultados__article-subtitle">Mobile Apps Ltd. | Barcelona</p>
                         <p class="resultados__article-description">Buscamos un desarrollador de aplicaciones moviles con expreriencia en iOS y Android. El candidato debe tener conocimientos de Swift, Kotlin y el desarrollo de interfaces de usuario</p>
                         <button class="resultados__article-btn btn-primary">Aplicar</button>
                     </article>
     
-                    <article class="resultados__article">
+                    <article class="resultados__article" data-tecno="aws">
                         <h3 class="resultados__article-title">Ingeniero DevOps</h3>
                         <p class="resultados__article-subtitle">Cloud Services SA. | Remoto</p>
                         <p class="resultados__article-description">Buscamos un ingeniero DevOps con experiencia en la automatizacion de procesos y el manejo de infraestructura en la nube. Se requiere conocimiento en herramientas como AWS, Azure y GCP</p>
